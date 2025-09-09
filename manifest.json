@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Tabs of Doom",
+  "version": "1.0",
+  "description": "Prevents opening duplicate tabs by switching to an existing one.",
+  "permissions": ["tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tabs of Doom"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
